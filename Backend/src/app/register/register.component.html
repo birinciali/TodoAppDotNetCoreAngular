@@ -1,0 +1,21 @@
+<main role ="main">
+  <div class="container">
+    <div class="row">
+      <form [formGroup]="userForm" (ngSubmit)="login()">
+        <h2>Lütfen giriş yapınız.</h2>
+        <div class="form-group">
+          <input type="text" id="userName" formControlName="userName" [(ngModel)]="user.userName" class="form-control" placeholder="User Name" autofocus>
+          <span class="help-block" *ngIf="userForm.get('userName').hasError('required') && userForm.get('userName').touched">Please enter a user name</span>
+        </div>
+        <div class="form-group">
+          <input type="password" id="password" formControlName="password" [(ngModel)]="user.password" class="form-control" placeholder="Password" autofocus>
+          <span class="help-block" *ngIf="userForm.get('password').hasError('required') && userForm.get('password').touched">Please enter a password</span>
+        </div>
+        <button type="submit" class="btn btn-lg btn-primary btn block" [disabled]="!userForm.valid">Submit</button>
+        <h6>{{userForm.value|json}}</h6>
+        <h6>{{userForm.status|json}}</h6>
+        <h6></h6>
+      </form>
+    </div>
+  </div>
+</main>

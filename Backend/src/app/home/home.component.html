@@ -1,0 +1,113 @@
+<div class="page home">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="page-tittle">
+          <span>Todo List App</span>
+        </h2>
+      </div>
+      <div class="col-md-6">
+        <form class="example-form">
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Yapılacak yeni madde ekle" #newTodo />
+          </mat-form-field>
+          <button mat-raised-button color="primary" (click)="addTodo(newTodo)">
+            Ekle
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div>
+      <angular2-date-picker
+        (onDateSelect)="onDateSelect($event)"
+        [(ngModel)]="date"
+        [settings]="settings"
+      >
+      </angular2-date-picker>
+    </div>
+    <div>
+      <div class="row mt-5">
+        <div class="col-md-12">
+          <mat-card class="d-flex"
+            ><div class="example-container">
+              <h5><b>Bekleyenler</b></h5>
+
+              <div
+                cdkDropList
+                #pendingsList="cdkDropList"
+                [cdkDropListData]="data.pendings"
+                [cdkDropListConnectedTo]="[inprogressList, doneList]"
+                class="example-list"
+                (cdkDropListDropped)="drop($event)"
+              >
+                <div
+                  class="example-box"
+                  *ngFor="let item of data.pendings"
+                  cdkDrag
+                >
+                  {{ item.text }}
+                  <div class="deleteBtn">
+                    <button (click)="deleteTodo(item.id)">Sil</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="example-container">
+              <h5><b>Yapım aşamasında olanlar</b></h5>
+
+              <div
+                cdkDropList
+                #inprogressList="cdkDropList"
+                [cdkDropListData]="data.inprogress"
+                [cdkDropListConnectedTo]="[pendingsList, doneList]"
+                class="example-list"
+                (cdkDropListDropped)="drop($event)"
+              >
+                <div
+                  class="example-box"
+                  *ngFor="let item of data.inprogress"
+                  cdkDrag
+                >
+                  {{ item.text }}
+                  <div class="deleteBtn">
+                    <button (click)="deleteTodo(item.id)">Sil</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="example-container">
+              <h5><b>Tamamlananlar</b></h5>
+
+              <div
+                cdkDropList
+                #doneList="cdkDropList"
+                [cdkDropListData]="data.done"
+                [cdkDropListConnectedTo]="[inprogressList, pendingsList]"
+                class="example-list"
+                (cdkDropListDropped)="drop($event)"
+              >
+                <div class="example-box" *ngFor="let item of data.done" cdkDrag>
+                  {{ item.text }}
+                  <div class="deleteBtn">
+                    <button (click)="deleteTodo(item.id)">Sil</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </mat-card>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br />
+  <h2>{{ date }}</h2>
+  <h2>{{ cevirilecekTarih }}</h2>
+  <h2>{{ sliced }}</h2>
+  <h2>{{ count }}</h2>
+  <h2>{{ data.date }}</h2>
+</div>
+

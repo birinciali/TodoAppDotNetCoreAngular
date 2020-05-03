@@ -1,0 +1,15 @@
+C:\Users\Monster\source\repos\TodoAppAPIwithJWT\TodoAppAPIwithJWT\bin\Debug\netcoreapp2.0\TodoAppAPIwithJWT.deps.json
+C:\Users\Monster\source\repos\TodoAppAPIwithJWT\TodoAppAPIwithJWT\bin\Debug\netcoreapp2.0\TodoAppAPIwithJWT.runtimeconfig.json
+C:\Users\Monster\source\repos\TodoAppAPIwithJWT\TodoAppAPIwithJWT\bin\Debug\netcoreapp2.0\TodoAppAPIwithJWT.runtimeconfig.dev.json
+C:\Users\Monster\source\repos\TodoAppAPIwithJWT\TodoAppAPIwithJWT\bin\Debug\netcoreapp2.0\TodoAppAPIwithJWT.dll
+C:\Users\Monster\source\repos\TodoAppAPIwithJWT\TodoAppAPIwithJWT\obj\Debug\netcoreapp2.0\TodoAppAPIwithJWT.csprojAssemblyReference.cache
+C:\Users\Monster\source\repos\TodoAppAPIwithJWT\TodoAppAPIwithJWT\obj\Debug\netcoreapp2.0\TodoAppAPIwithJWT.AssemblyInfoInputs.cache
+C:\Users\Monster\source\repos\TodoAppAPIwithJWT\TodoAppAPIwithJWT\obj\Debug\netcoreapp2.0\TodoAppAPIwithJWT.AssemblyInfo.cs
+C:\Users\Monster\source\repos\TodoAppAPIwithJWT\TodoAppAPIwithJWT\bin\Debug\netcoreapp2.0\TodoAppAPIwithJWT.pdb
+C:\Users\Monster\source\repos\TodoAppAPIwithJWT\TodoAppAPIwithJWT\obj\Debug\netcoreapp2.0\TodoAppAPIwithJWT.dll
+C:\Users\Monster\source\repos\TodoAppAPIwithJWT\TodoAppAPIwithJWT\obj\Debug\netcoreapp2.0\TodoAppAPIwithJWT.pdb
+C:\Users\Monster\source\repos\TodoAppAPIwithJWT\TodoAppAPIwithJWT\bin\Debug\netcoreapp2.0\appsettings.Development.json
+C:\Users\Monster\source\repos\TodoAppAPIwithJWT\TodoAppAPIwithJWT\bin\Debug\netcoreapp2.0\appsettings.json
+C:\Users\Monster\source\repos\TodoAppAPIwithJWT\TodoAppAPIwithJWT\bin\Debug\netcoreapp2.0\Properties\launchSettings.json
+C:\Users\Monster\source\repos\TodoAppAPIwithJWT\TodoAppAPIwithJWT\obj\Debug\netcoreapp2.0\TodoAppAPIwithJWT.csproj.CoreCompileInputs.cache
+C:\Users\Monster\source\repos\TodoAppAPIwithJWT\TodoAppAPIwithJWT\obj\Debug\netcoreapp2.0\TodoAppAPIwithJWT.genruntimeconfig.cache
